@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FileManager_Quan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0J-eB-NjC">
+                                <rect key="frame" x="206" y="261" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Equality Test">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnEqualityTestAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgs-XM-5zs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QS-hB-McT">
+                                <rect key="frame" x="206" y="211" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Copy File">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCopyFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aha-Co-DaW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1d-oF-8wI">
+                                <rect key="frame" x="206" y="161" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Read File">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnReadFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EnG-O1-aJI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfa-e3-aqt">
+                                <rect key="frame" x="206" y="311" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Remove File">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRemoveFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2f-4k-sV4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="su4-wH-wnV">
+                                <rect key="frame" x="32" y="261" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="File Permissions">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFilePermissionsAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nmU-kC-kj9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="494-Nk-3lV">
+                                <rect key="frame" x="32" y="211" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Move File">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnMoveFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pMv-Cn-QGU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujb-Yo-ej1">
+                                <rect key="frame" x="32" y="161" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Write File">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnWriteFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2VU-NH-mRz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzG-dq-Q6q">
+                                <rect key="frame" x="32" y="111" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="SgZ-d0-Sf3"/>
+                                </constraints>
+                                <state key="normal" title="Create File">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCreateFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1b-ug-W2T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q3-2Q-GmR">
+                                <rect key="frame" x="32" y="311" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Directory Constant">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDirectoryConstantAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSK-ez-e1l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Management" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kp-MN-5ea">
+                                <rect key="frame" x="10" y="50" width="355" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-4g-Fx0">
+                                <rect key="frame" x="206" y="111" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="tCc-Xv-sse"/>
+                                </constraints>
+                                <state key="normal" title="Create Directori">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCreateDirectoryAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUp-jy-YYj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sfa-e3-aqt" firstAttribute="width" secondItem="9qe-4g-Fx0" secondAttribute="width" id="3kH-Wb-Ngq"/>
+                            <constraint firstItem="P0J-eB-NjC" firstAttribute="top" secondItem="6QS-hB-McT" secondAttribute="bottom" constant="20" id="4uE-h8-HXP"/>
+                            <constraint firstItem="494-Nk-3lV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="5Sb-fL-b76"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9qe-4g-Fx0" secondAttribute="trailing" constant="13" id="5Ws-wF-IVz"/>
+                            <constraint firstItem="494-Nk-3lV" firstAttribute="top" secondItem="Ujb-Yo-ej1" secondAttribute="bottom" constant="20" id="5au-hG-wlH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6QS-hB-McT" secondAttribute="trailing" constant="13" id="7a8-Jv-L0E"/>
+                            <constraint firstAttribute="trailing" secondItem="1kp-MN-5ea" secondAttribute="trailing" constant="10" id="BdO-VW-iY7"/>
+                            <constraint firstItem="DzG-dq-Q6q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="91" id="Gza-Za-tIa"/>
+                            <constraint firstItem="g1d-oF-8wI" firstAttribute="width" secondItem="9qe-4g-Fx0" secondAttribute="width" id="M2g-hM-vPz"/>
+                            <constraint firstItem="sfa-e3-aqt" firstAttribute="top" secondItem="P0J-eB-NjC" secondAttribute="bottom" constant="20" id="Our-Ua-rfJ"/>
+                            <constraint firstItem="4q3-2Q-GmR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="Q3n-3c-32d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sfa-e3-aqt" secondAttribute="trailing" constant="13" id="QmZ-fb-G1P"/>
+                            <constraint firstItem="9qe-4g-Fx0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="91" id="R3T-nY-5cf"/>
+                            <constraint firstItem="6QS-hB-McT" firstAttribute="width" secondItem="9qe-4g-Fx0" secondAttribute="width" id="UUC-3b-Pva"/>
+                            <constraint firstItem="4q3-2Q-GmR" firstAttribute="top" secondItem="su4-wH-wnV" secondAttribute="bottom" constant="20" id="Udo-8T-jUs"/>
+                            <constraint firstItem="DzG-dq-Q6q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="V2I-Mp-SHf"/>
+                            <constraint firstItem="6QS-hB-McT" firstAttribute="top" secondItem="g1d-oF-8wI" secondAttribute="bottom" constant="20" id="VT9-v8-vMv"/>
+                            <constraint firstItem="1kp-MN-5ea" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="WxJ-8x-WwQ"/>
+                            <constraint firstItem="P0J-eB-NjC" firstAttribute="width" secondItem="9qe-4g-Fx0" secondAttribute="width" id="XOh-Fm-sZG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P0J-eB-NjC" secondAttribute="trailing" constant="13" id="Zdb-Ab-4Hz"/>
+                            <constraint firstItem="Ujb-Yo-ej1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="bPt-eN-Aqw"/>
+                            <constraint firstItem="Ujb-Yo-ej1" firstAttribute="top" secondItem="DzG-dq-Q6q" secondAttribute="bottom" constant="20" id="d4u-4W-CKC"/>
+                            <constraint firstItem="g1d-oF-8wI" firstAttribute="top" secondItem="9qe-4g-Fx0" secondAttribute="bottom" constant="20" id="elX-gN-1Hr"/>
+                            <constraint firstItem="1kp-MN-5ea" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="esf-Ci-yY4"/>
+                            <constraint firstItem="494-Nk-3lV" firstAttribute="width" secondItem="DzG-dq-Q6q" secondAttribute="width" id="f78-g1-UoD"/>
+                            <constraint firstItem="su4-wH-wnV" firstAttribute="top" secondItem="494-Nk-3lV" secondAttribute="bottom" constant="20" id="kiF-BK-t83"/>
+                            <constraint firstItem="4q3-2Q-GmR" firstAttribute="width" secondItem="DzG-dq-Q6q" secondAttribute="width" id="nnW-qJ-4xI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g1d-oF-8wI" secondAttribute="trailing" constant="13" id="qiS-Xf-Qya"/>
+                            <constraint firstItem="su4-wH-wnV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="rc7-kB-dCg"/>
+                            <constraint firstItem="su4-wH-wnV" firstAttribute="width" secondItem="DzG-dq-Q6q" secondAttribute="width" id="smY-JE-REH"/>
+                            <constraint firstItem="Ujb-Yo-ej1" firstAttribute="width" secondItem="DzG-dq-Q6q" secondAttribute="width" id="zBQ-RM-62S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCreateFile" destination="DzG-dq-Q6q" id="Rig-xx-tcN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
